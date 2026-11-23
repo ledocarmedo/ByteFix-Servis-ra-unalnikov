@@ -1,0 +1,263 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\IfFileExists{slovene.ldf}{\usepackage[slovene]{babel}}{}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+\setlist{itemsep=2pt, topsep=4pt}
+
+\begin{document}
+\begin{titlepage}
+  \centering
+  \vspace*{3cm}
+  {\Huge\bfseries ByteFix\par}
+  \vspace{0.5cm}
+  {\Large Servis računalnikov\par}
+  \vspace{2cm}
+  {\LARGE Pregled obstoječih rešitev\par}
+  \vspace{3cm}
+  {\large\bfseries Člani skupine:\par}
+  \vspace{0.4cm}
+  {\large
+  Val Ledinek\par
+  Jan Biberović\par
+  Svit Podovšovnik\par 
+  }
+  \vfill
+  {\large Maribor, november 2026\par}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Uvod}
+
+ByteFix je servis računalnikov, prenosnikov in gaming opreme. Strankam nudimo
+diagnostiko, popravila in nadgradnje naprav, sestavljamo gaming računalnike po
+meri glede na želje in proračun ter prodajamo računalniške komponente, kot so
+procesorji, grafične kartice, pomnilnik in diski.
+
+Problem, ki ga rešujemo, je razdrobljenost teh storitev. Stranka, ki ima pokvarjen prenosnik ali želi nov gaming računalnik, mora danes pogosto uporabiti več različnih kanalov: spletno trgovino za nakup komponent, telefon
+ali e-pošto za dogovor o servisu in osebni obisk za oddajo naprave. Stanja popravila običajno ne more spremljati na spletu, o ceni pa izve šele po diagnostiki. Naš cilj je spletna rešitev, ki na enem mestu združuje naročilo servisa, spremljanje stanja popravila, sestavljanje računalnika po meri in nakup komponent.
+
+V nadaljevanju pregledamo tri obstoječe slovenske rešitve, ki ponujajo
+podobne storitve: Anni \cite{anni}, Funtech \cite{funtech} in Komponentko
+\cite{komponentko}.
+
+\section{Anni}
+
+\subsection*{Opis}
+Anni je slovenska računalniška trgovina s sedežem v Trzinu. Navaja več kot 25
+let izkušenj v računalništvu, ekipo okoli 40 sodelavcev in lasten servis
+\cite{ceneje-anni}. Poleg prodaje opreme ponuja tudi lastno linijo
+sestavljenih računalnikov (npr.\ serija ANNI Gamer) \cite{ceneje-anni-znamka}
+ter svetovanje pri nakupu po telefonu \cite{zurnal-anni}.
+
+\subsection*{Ključne funkcionalnosti}
+\begin{itemize}
+  \item spletna trgovina z velikim izborom komponent, prenosnikov in periferije,
+  \item lastni sestavljeni (gaming) računalniki v več cenovnih razredih,
+  \item lasten računalniški servis,
+  \item plačilo na obroke, dostava ali osebni prevzem,
+  \item možnost preizkusa izdelka pred nakupom.
+\end{itemize}
+
+\subsection*{Prednosti}
+\begin{itemize}
+  \item velika in uveljavljena trgovina, ki ji zaupa veliko strank,
+  \item prodaja, sestavljeni računalniki in servis pri istem ponudniku,
+  \item fizična poslovalnica, kjer lahko stranka dobi osebni nasvet.
+\end{itemize}
+
+\subsection*{Slabosti}
+\begin{itemize}
+  \item servis ni glavni poudarek spletne strani; naročilo popravila in
+        spremljanje stanja nista podprta kot samostojen spletni postopek,
+  \item zelo obsežna ponudba lahko začetnika pri izbiri komponent zmede,
+  \item ni preprostega interaktivnega konfiguratorja s preverjanjem
+        združljivosti, prilagojenega igričarjem.
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{anni.png}
+  \caption{Domača stran spletne trgovine Anni \cite{anni}.}
+  \label{fig:anni}
+\end{figure}
+
+\section{Funtech}
+
+\subsection*{Opis}
+Funtech je specializirana slovenska spletna trgovina z računalniško opremo,
+ki jo uporabniki na forumu Slo-Tech pogosto priporočajo za nakup komponent in
+sestavo gaming računalnikov \cite{slotech-gaming,slotech-mlacom-funtech}.
+Stranka lahko izbere komponente in jih naroči kot sestavljen računalnik.
+
+\subsection*{Ključne funkcionalnosti}
+\begin{itemize}
+  \item velik izbor računalniških komponent s podrobnimi specifikacijami,
+  \item naročilo sestave računalnika iz izbranih komponent,
+  \item filtriranje izdelkov po parametrih (proizvajalec, cena, zmogljivost),
+  \item informacija o zalogi in roku dobave,
+  \item plačilo na obroke.
+\end{itemize}
+
+\subsection*{Prednosti}
+\begin{itemize}
+  \item dober izbor zmogljivih komponent za igričarje,
+  \item konkurenčne cene, zato je med zahtevnejšimi kupci priljubljena,
+  \item možnost sestave računalnika po meri.
+\end{itemize}
+
+\subsection*{Slabosti}
+\begin{itemize}
+  \item uporabniki poročajo o slabem obveščanju o nedobavljivosti izdelkov in
+        o daljših čakalnih dobah pri sestavi \cite{slotech-funtech-izkusnje,slotech-mlacom-funtech},
+  \item stranka mora sama vedeti, katere komponente izbrati, saj spletna stran
+        ne vodi začetnika skozi izbiro glede na igre in proračun,
+  \item servis in popravila niso v ospredju ponudbe.
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{funtech.png}
+  \caption{Spletna trgovina Funtech \cite{funtech}.}
+  \label{fig:funtech}
+\end{figure}
+
+\section{Komponentko}
+
+\subsection*{Opis}
+Komponentko je ljubljanska računalniška trgovina, ki prodaja novo in preverjeno
+rabljeno računalniško opremo ter lastno serijo sestavljenih gaming računalnikov
+(Komponentko Gaming) \cite{ceneje-komponentko}. Ima tudi lasten servis, ki
+po lastnih navedbah diagnostiko in popravila pogosto opravi v 48 urah, in nudi
+reševanje podatkov \cite{ceneje-komponentko-oprema}. Izdelke prodaja tudi prek
+platforme Mimovrste \cite{mimovrste-komponentko}.
+
+\subsection*{Ključne funkcionalnosti}
+\begin{itemize}
+  \item prodaja novih in preverjenih rabljenih komponent,
+  \item serija sestavljenih gaming računalnikov v več konfiguracijah,
+  \item hiter servis (diagnostika in popravilo) ter reševanje podatkov,
+  \item odkup in menjava stare opreme (\textit{staro za novo}),
+  \item več načinov plačila in sledljiva dostava po Sloveniji.
+\end{itemize}
+
+\subsection*{Prednosti}
+\begin{itemize}
+  \item ponudba je najbližja ByteFixu: gaming računalniki, komponente in servis,
+  \item kratek obljubljen rok servisa,
+  \item odkup stare opreme zniža ceno nadgradnje za stranko.
+\end{itemize}
+
+\subsection*{Slabosti}
+\begin{itemize}
+  \item računalniki so na voljo predvsem kot vnaprej pripravljene
+        konfiguracije, ne kot prosto sestavljanje po meri,
+  \item stranka ne more na spletu oddati zahtevka za servis in spremljati
+        stanja popravila,
+  \item del prodaje poteka prek zunanje platforme, zato izkušnja ni enotna.
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{komponentko.png}
+  \caption{Spletna trgovina Komponentko \cite{komponentko}.}
+  \label{fig:komponentko}
+\end{figure}
+
+\section{Zaključek}
+
+Pregled je pokazal, da slovenski ponudniki dobro pokrivajo prodajo komponent
+in sestavljenih računalnikov, servis pa je pri njih le dodatna storitev, ki je
+na spletu skoraj ni mogoče uporabljati.
+
+\subsection*{Kaj bomo prevzeli}
+\begin{itemize}
+  \item pregleden katalog komponent s filtri in prikazom zaloge (Funtech, Anni),
+  \item vnaprej pripravljene gaming konfiguracije za različne proračune
+        (Komponentko, Anni),
+  \item jasno navedene roke servisa in možnost odkupa stare opreme
+        (Komponentko),
+  \item več načinov plačila in prevzema.
+\end{itemize}
+
+\subsection*{Kaj bo ByteFix naredil drugače ali bolje}
+\begin{itemize}
+  \item \textbf{spletno naročilo servisa}: stranka opiše težavo, izbere termin
+        oddaje naprave in prejme številko zahtevka,
+  \item \textbf{spremljanje stanja popravila} v realnem času (sprejeto,
+        diagnostika, čaka na del, popravljeno, pripravljeno za prevzem),
+  \item \textbf{okvirni cenik} storitev, da stranka ceno pozna vnaprej,
+  \item \textbf{konfigurator po meri} s preverjanjem združljivosti komponent,
+        ki začetnika vodi glede na igre in proračun,
+  \item \textbf{enoten uporabniški račun} z zgodovino nakupov in popravil
+        ter obvestili po e-pošti.
+\end{itemize}
+
+S tem bo ByteFix združil trgovino, sestavo računalnikov po meri in servis
+v eno pregledno spletno rešitev.
+
+\begin{thebibliography}{99}
+
+\bibitem{anni}
+Anni d.o.o., \textit{Anni -- specialisti za računalnike}.
+\url{https://www.anni.si}. Dostopano: 23.\,11.\,2026.
+
+\bibitem{ceneje-anni}
+Ceneje.si, \textit{Opis trgovine anni.si}.
+\url{https://www.ceneje.si/Trgovina/145/L1/15/pisarna-in-sola}. Dostopano: 23.\,11.\,2026.
+
+\bibitem{ceneje-anni-znamka}
+Ceneje.si, \textit{Znamka ANNI -- računalniki}.
+\url{https://www.ceneje.si/Proizvajalec/2692/anni}. Dostopano: 23.\,11.\,2026.
+
+\bibitem{zurnal-anni}
+Žurnal24, \textit{Kako zanesljivo do ustreznega računalnika?}
+\url{https://www.zurnal24.si/uporabno/kako-zanesljivo-do-ustreznega-racunalnika-323498}.
+Dostopano: 23.\,11.\,2026.
+
+\bibitem{funtech}
+Funtech, \textit{Spletna trgovina Funtech}.
+\url{https://www.funtech.si}. Dostopano: 23.\,11.\,2026.
+
+\bibitem{slotech-gaming}
+Slo-Tech forum, \textit{Nakup gaming računalnika}.
+\url{https://slo-tech.com/forum/t750066/p6452635}. Dostopano: 23.\,11.\,2026.
+
+\bibitem{slotech-mlacom-funtech}
+Slo-Tech forum, \textit{Izkušnje s trgovino Mlacom in Funtech}.
+\url{https://slo-tech.com/forum/t396640/p7282816}. Dostopano: 23.\,11.\,2026.
+
+\bibitem{slotech-funtech-izkusnje}
+Slo-Tech forum, \textit{Izkušnje s trgovino Mlacom in Funtech} (starejša stran teme).
+\url{https://slo-tech.com/forum/t396640/p4556851}. Dostopano: 23.\,11.\,2026.
+
+\bibitem{komponentko}
+Komponentko d.o.o., \textit{Spletna trgovina Komponentko}.
+\url{https://www.komponentko.si}. Dostopano: 23.\,11.\,2026.
+
+\bibitem{ceneje-komponentko}
+Ceneje.si, \textit{Opis trgovine Komponentko.si}.
+\url{https://www.ceneje.si/Trgovina/2879/L2/13/komponentkosi/racunalnistvo/racunalniki}.
+Dostopano: 23.\,11.\,2026.
+
+\bibitem{ceneje-komponentko-oprema}
+Ceneje.si, \textit{Komponentko.si -- računalniška oprema}.
+\url{https://www.ceneje.si/Trgovina/2879/L2/19/komponentkosi/racunalnistvo/racunalniska-oprema}.
+Dostopano: 23.\,11.\,2026.
+
+\bibitem{mimovrste-komponentko}
+Mimovrste, \textit{Znamka Komponentko}.
+\url{https://www.mimovrste.com/znamke/komponentko}. Dostopano: 23.\,11.\,2026.
+
+\end{thebibliography}
+
+\end{document}
